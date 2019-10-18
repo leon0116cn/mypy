@@ -44,7 +44,7 @@ def do_request_get(url):
         print(e)
 
 
-def parser_city_poi(json_data):
+def parser_domestic_flight_city(json_data):
     poi_data = []
     for key1, item_first in json_data.get('data').items():
         if isinstance(item_first, dict):
@@ -70,10 +70,10 @@ def parser_country_code(json_data):
     return poi_data
 
 
-def get_city_poi():
+def get_domestic_flight_city():
     url = "https://flights.ctrip.com/itinerary/api/poi/get"
     poi_json = do_request_get(url)
-    poi_data = parser_city_poi(poi_json)
+    poi_data = parser_domestic_flight_city(poi_json)
     print(poi_data)
     return poi_data
 
