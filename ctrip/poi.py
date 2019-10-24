@@ -87,7 +87,7 @@ def get_country_code():
 
 
 def main():
-#    get_city_poi()
+    get_domestic_flight_city()
     get_country_code()
 
 
