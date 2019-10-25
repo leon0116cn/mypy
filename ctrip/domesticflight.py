@@ -29,6 +29,7 @@ USER_AGENT = [
 ]
 DOMESTIC_FLIGHT_SEARCH_URL = "https://flights.ctrip.com/itinerary/api/12808/products"
 DOMESTIC_FLIGHT_SEARCH_REFERER = "https://flights.ctrip.com/itinerary/oneway/sha-sia"
+DOMESTIC_FLIGHT_SEARCH_TOKEN = '536bc24712ea27bb5109f78178533ba7'
 REQUEST_TIMEOUT = 5
 
 
@@ -41,7 +42,7 @@ def get_domestic_flight_search_criteria(dcity='SHA', acity='SIA', days=20, **kwa
         'classType': 'ALL',
         'searchIndex': 1,
         'airportParams': airport_params,
-        'token': '536bc24712ea27bb5109f78178533ba7'
+        'token': DOMESTIC_FLIGHT_SEARCH_TOKEN
     }
     if 'airline' in kwargs:
         search_criteria['airline'] = kwargs['airline']
