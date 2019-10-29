@@ -26,11 +26,14 @@ REQUEST_TIMEOUT = 5
 DOMESTIC_FLIGHT_SEARCH_URL = "https://flights.ctrip.com/itinerary/api/12808/products"
 DOMESTIC_FLIGHT_SEARCH_REFERER = "https://flights.ctrip.com/itinerary/oneway/sha-sia"
 DOMESTIC_FLIGHT_SEARCH_TOKEN = '536bc24712ea27bb5109f78178533ba7'
-DATAFRAME_COLUMNS = ['flightNumber', 'airlineName', 'airlineCode', 'sharedFlightNumber',
-                     'sharedFlightName', 'departureDate', 'arrivalDate', 'punctualityRate',
-                     'departure-cityName', 'departure-cityTlc', 'departure-airportName', 'departure-airportTlc',
-                     'departure-terminal-name', 'arrival-cityName', 'arrival-cityTlc', 'arrival-airportName',
-                     'arrival-airportTlc', 'arrival-terminal-name', 'craftTypeName', 'craftKind', 'oilFee', 'tax',
-                     'lowestPrice', 'lowestChildPrice', 'lowestChildAdultPrice', 'lowestCfPrice', 'lowestChildCfPrice',
-                     'lowestChildAdultCfPrice', 'Y-cabinClass', 'C-cabinClass', 'F-cabinClass', 'mealFlag', 'mealType']
+DOMESTIC_FLIGHT_COLUMNS = ['flightNumber', 'airlineName', 'sharedFlightNumber', 'sharedFlightName', 'departureDate',
+                           'arrivalDate', 'punctualityRate', 'departure-cityName', 'departure-cityTlc',
+                           'departure-airportName', 'departure-airportTlc', 'departure-terminal-name',
+                           'arrival-cityName', 'arrival-cityTlc', 'arrival-airportName', 'arrival-airportTlc',
+                           'arrival-terminal-name', 'craftTypeName', 'craftKind', 'lowestPrice', 'lowestChildPrice',
+                           'Y-cabinClass', 'C-cabinClass', 'F-cabinClass', 'tax', 'mealType']
+DOMESTIC_FLIGHT_DF_COLUMNS = ['Fn', 'Airline', 'Shared-Fn', 'Shared-Airline', 'Dept-Date', 'Arri-Date', 'Pun-Rate',
+                              'Dept-City', 'Dept-CityTlc', 'Dept-Airport', 'Dept-AirportTlc', 'Dept-Terminal',
+                              'Arri-City', 'Arri-CityTlc', 'Arri-Airport', 'Arri-AirportTlc', 'Arri-Terminal', 'Craft',
+                              'CraftKind', 'L-Price', 'LC-Price', 'Tax', 'Meal']
 EXPORT_FILE_PATH = 'E:\\MyProjects\\Pycharm\\mypy\\data\\'

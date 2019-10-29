@@ -119,7 +119,8 @@ def show_request_params_detail(r):
 
 
 def export_domestic_flight(flight_data):
-    df = pd.DataFrame(flight_data, columns=settings.DATAFRAME_COLUMNS)
+    df = pd.DataFrame(flight_data, columns=settings.DOMESTIC_FLIGHT_COLUMNS)
+    df.columns = settings.DOMESTIC_FLIGHT_DF_COLUMNS
     now = datetime.now().strftime('%Y-%m-%d')
     file_name = os.path.join(settings.EXPORT_FILE_PATH, '{0}.xlsx'.format(now))
     df.to_excel(file_name, index=False)
